@@ -1,0 +1,16 @@
+job_description_analysis:
+  description: >
+    Using the resume and {job_description}, create a new tailored job experience section
+    optimized for ATS and aligned with the job responsibilities and qualifications
+  expected_output: >
+    A 4–6 sentence paragraph tailored to the job role, using relevant language from both the resume and job description.
+  agent: experience_writer
+
+job_experience_review:
+  description: >
+    Refine the AI-generated experience section for grammar, tone, clarity,
+    and ensure it's aligned with ATS keywords from both resume and JD.
+    Ask User if more information is needed.
+  expected_output: >
+     A final polished job experience section suitable for direct inclusion in a resume or LinkedIn profile.
+  agent: experience_reviewer

@@ -1,0 +1,23 @@
+[project]
+name = "jobexp"
+version = "0.1.0"
+description = "jobexp using crewAI"
+authors = [{ name = "SAI CHARAN", email = "GOPISETTYCHARAN@GMAIL.COM" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0"
+]
+
+[project.scripts]
+jobexp = "jobexp.main:run"
+run_crew = "jobexp.main:run"
+train = "jobexp.main:train"
+replay = "jobexp.main:replay"
+test = "jobexp.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
