@@ -1,8 +1,14 @@
 job_description_analysis:
-  description: "Analyze the job description and generate tailored job experience content"
-  expected_output: "BAR Statements of 4–6 sentences with each statement not more than 50 words tailored for ATS optimization"
+  description: "
+    Analyze the job description for a {role} position.
+    Write {bullet_range} bullet points with a {tone} tone,
+    highlighting the most relevant skills and responsibilities.
+    "
+  expected_output: "A list of bullet points tailored to the job description."
 
 job_experience_review:
-  description: "Review the generated experience and improve clarity, tone, and keyword alignment"
-  expected_output: "Final version suitable for pasting into a resume"
+  description: "Review the AI-generated job experience bullet points for a {{ role }} role.
+    Ensure clarity, consistency, and use of impactful action verbs. Format them properly and remove commentary or editorial notes.
+    The output should be resume-ready, concise, and ATS-optimized — with no extra analysis or explanations."
+  expected_output: "Final clean and polished bullet points for resume use only"
   output_file: "output/optimized_experience.txt"
