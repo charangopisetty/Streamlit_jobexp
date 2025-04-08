@@ -2,3 +2,4 @@ streamlit
 crewai
 pyyaml
 python-dotenv
+pysqlite3-binary
